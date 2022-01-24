@@ -1,0 +1,12 @@
+from tkinter import *
+ap=Tk()
+ap.geometry("5000x720")
+#scrollbar=Scrollbar(ap)
+#scrollbar.pack(side=RIGHT,fill=Y)
+#text=Text(ap,yscrollcommand=scrollbar.set,width=1000,height=1000,font="consolas 11 bold ")
+#text.pack(fill=BOTH)
+#scrollbar.config(command=text.yview)
+#w=ap.winfo_screenwidth()
+#h=ap.winfo_screenheight()
+#print(f"{w}x{h}")
+ap.mainloop()

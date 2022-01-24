@@ -1,0 +1,27 @@
+from tkinter import *
+ap=Tk()
+ap.geometry("450x350")
+def Func():
+    print("hello dosto key haal chal")
+
+#menu=Menu(ap)
+#menu.add_command(label="File",command=Func)
+#menu.add_command(label="Exit",command=ap.destroy)
+#ap.config(menu=menu)
+menu1=Menu(ap)
+m1=Menu(menu1,tearoff=0)
+m1.add_command(label="new",command=Func)
+m1.add_separator()
+m1.add_command(label="open",command=Func)
+m1.add_command(label="save",command=Func)
+menu1.add_cascade(label="file",menu=m1)
+ap.config(menu=menu1)
+
+m2=Menu(menu1,tearoff=0)
+m2.add_command(label="new",command=Func)
+m2.add_separator()
+m2.add_command(label="open",command=Func)
+m2.add_command(label="save",command=Func)
+menu1.add_cascade(label="edit",menu=m2)
+ap.config(menu=menu1)
+ap.mainloop()

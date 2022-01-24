@@ -1,0 +1,21 @@
+from tkinter import *
+ap=Tk()
+ap.geometry("550x450")
+ap.title("To-Do List")
+ap.configure(bg="pink")
+ap.wm_iconbitmap("to-do.ico")
+def Add():
+    lb1.insert(END,lab1var.get())
+def Done():
+    lb1.delete(ACTIVE)
+lab1=Label(text="Enter Your Task",bg="black",fg="white",width=20,height=2)
+lab1.grid(row=0,column=3,padx=190,pady=15)
+lab1var=StringVar()
+Ent1=Entry(ap,textvariable=lab1var,width=50)
+Ent1.grid(row=1,column=3)
+but1=Button(ap,text="Submit",bg="yellow",command=Add).grid(row=2,column=3,pady=10)
+lb1=Listbox(ap,width=30)
+lb1.grid(row=3,column=3,pady=20)
+but2=Button(ap,text="Completed",bg="yellow",command=Done).grid(row=4,column=3,pady=10)
+but3=Button(ap,text="Quit",bg="yellow",command=ap.destroy).grid(row=5,column=3,padx=10)
+ap.mainloop()
