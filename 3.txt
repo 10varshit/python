@@ -1,5 +1,0 @@
-What is Lorem Ipsum?\n"
-                 "Lorem Ipsum is simply dummy text of the printing and\n"
-                 "typesetting industry. Lorem Ipsum has been the industry's \n"
-                 "standard dummy text ever since the 1500s, when an unknown printer\n"
-                 " took a galley of type and scrambled it to make a type specimen book."
